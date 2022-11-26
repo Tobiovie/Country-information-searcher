@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+nav{
+  /* background-color: hsl(209, 23%, 22%); */
+  display: flex;
+  padding: 0.7em 4em;
+  font-size: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+
+}
+.background{
+  
+}
+.box .mapapi{
+  /* background-color: hsl(207, 26%, 17%); */
+}
+.box .filsearch{
+  /* background-color: hsl(207, 26%, 17%); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2em 5em;
+}
+.filsearch input{
+  padding: 1em 6em 1em 3em;
+  /* background-color: hsl(209, 23%, 22%); */
+  /* color: white; */
+  border: 0;
+  border-radius: 5px;
+}
+.filsearch .filter{
+  /* background-color:  hsl(209, 23%, 22%); */
+  align-items: center;
+  position: relative;
+  display: flex;
+  padding: 0 1em 0 1em;
+  
+}
+.filter .filter-continents{
+  position: absolute;
+  /* background-color:  hsl(209, 23%, 22%); */
+  padding: 1em 8.5em 1em 1em;
+  left: 0;
+  top: 3.6em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.mar-left{
+ margin-left: 3em;
+}
+.disblock{
+  display: block;
+}
+.disflex{
+  display: flex;
+}
+.disnone{
+  display: none;
+}
+.mapitem .list-about{
+  display: flex;
+  flex-direction: column;
+  padding: 1em 7.3em 2em 1em;
+  /* background-color:  hsl(209, 23%, 22%); */
+}
+.mapitem .list-about .common-name{
+  margin-bottom: 1em;
+}
+.mapapi{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+}
+.search-icon{
+  position: absolute;
+  top: 0.8em;
+  left: 1em;
+}
+.filsearch > div:first-child{
+  position: relative;
+}
+.lightmode{
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+
+}
+.parent-wi{
+  position: relative;
+}
+.wi-icon{
+   position: absolute;
+   top: 0.2em;
+   left: -1.2em;
+   transform: rotateZ(-17deg);
+}
+.darkmode{
+  background-color: hsl(209, 23%, 22%);
+  color: white;
+  
+}
+.inback{
+  background-color: white;
+  color: hsl(200, 15%, 8%);
+}
+
+@media(max-width:655px){
+  .filsearch .filter{
+    margin-top: 1em;
+    padding: 0.5em;
+    justify-items: flex-start;
+    justify-self: flex-start;
+    border-radius: 0.5em;
+    align-items: flex-start;
+    position: relative;
+  
+    left: -4em;
+  }
+  .box .filsearch{
+    justify-content: center;
+    position: relative;
+  }
+  .filsearch input{
+    padding: 1.5em 7em 1.5em 5em;
+  }
+  .search-icon{
+    top: 1em;
+  }
+  nav{
+    padding: 0.7em 0.3em;
+    font-weight: 600;
+  }
+}

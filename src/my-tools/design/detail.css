@@ -1,0 +1,118 @@
+ body{
+    /* background-color: hsl(207, 26%, 17%); */
+ }
+ 
+ .gri-parent{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content:center ;
+    gap: 5em;
+    /* background-color:  hsl(207, 26%, 17%); */
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.parent-wi{
+    cursor: pointer;
+}
+.back-area{
+    /* background-color:  hsl(207, 26%, 17%); */
+    padding: 3em;
+}
+.back-area .arrow{
+    position: relative;
+    top: 0.1em;
+    right: 0.3em;
+}
+.gri{
+    /* background-color:  hsl(207, 26%, 17%); */
+    display: grid;
+    column-gap: 8em;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'gri1 gri2'
+                         'gri1 gri2'
+                         'gri3 gri3';
+}
+.detail-area img{
+    width: 30em;
+    
+}
+button{
+    padding: 0 1em;
+    border: 0;
+    /* color: white;
+    background-color:  hsl(209, 23%, 22%); */
+}
+.native span{
+    margin-right: 1em;
+}
+.gri .gri1{
+    /* background-color: hsl(207, 26%, 17%); */
+    grid-area: gri1;
+}
+.gri1 div{
+    margin-top: 0.4em;
+}
+.gri .gri2{
+    /* background-color: hsl(207, 26%, 17%); */
+    grid-area: gri2;
+    align-self: center;
+}
+.gri2 div{
+    margin-bottom: 1em;
+}
+.gri .gri3{
+    /* background-color:  hsl(207, 26%, 17%); */
+    grid-area: gri3;
+    display: flex;
+    margin-top: 3em;
+    
+}
+.name{
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+.languages span{
+    /* display:  flex;
+    justify-content: space-around; */
+    margin-right: 1em;
+}
+.gri3 .bordercoun{
+   margin-left: 1em;
+   /* background-color: hsl(209, 23%, 22%); */
+   padding: 0 1em;
+   border-radius: 3px;
+   align-self: flex-start;
+   cursor: pointer;
+}
+
+@media(max-width:672px){
+    .gri{
+        gap: 2em;
+        justify-content: center;
+        padding: 0em 0em 0em 1em;
+        align-items: center;
+        grid-template-areas: 'gri1 '
+                             'gri2'
+                             'gri3';
+    }
+    .detail-area img{
+        width: 20em;
+    }
+    .gri3 .bordercoun{
+        /* position: absolute; */
+        margin: 0;
+    }
+    .gri .gri3{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
+    .gri .gri3 span{
+        position: absolute;
+        top: -2.5em;
+    }
+
+}
